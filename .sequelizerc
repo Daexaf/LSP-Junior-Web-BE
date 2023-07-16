@@ -1,0 +1,10 @@
+const path = require("path");
+const dotenv = require("dotenv");
+
+const CONFIG_DIR = path.join(__dirname, "config");
+
+dotenv.config();
+
+module.exports = {
+  config: path.join(CONFIG_DIR, "database.js"),
+};
